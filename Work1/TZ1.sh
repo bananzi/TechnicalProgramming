@@ -36,7 +36,7 @@ input=$1
 output=$2
 cd $input
 echo "Начало процесса копирования файлов"
-
+#проверка на то, пустая ли входная директория
 shopt -s nullglob dotglob
 files=(*)
 if [[ !${#files[*]} ]];then
